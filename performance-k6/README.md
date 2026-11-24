@@ -63,11 +63,10 @@ performance-k6/
    k6 version
    ```
 
-2. Entre na pasta e execute o teste (PowerShell):
+2. Entre na pasta e execute o teste:
 
    ```powershell
    cd performance-k6
-   New-Item -ItemType Directory -Force resultados
    k6 run --out web-dashboard=export=resultados/relatorio.html --summary-export=resultados/resumo.json teste-carga.js
    ```
 
