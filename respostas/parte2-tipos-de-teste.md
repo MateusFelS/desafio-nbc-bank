@@ -106,32 +106,32 @@ Primeiro, registraria o bug com os passos para reproduzir o problema e as evidê
 
 Exemplo:
 
-```markdown
-**Título:** Sistema permite finalizar pedidos sem efetuar pagamento.
+```
+Título: Sistema permite finalizar pedidos sem efetuar pagamento.
 
-**Descrição:** Foi identificado um problema em que o sistema permite que clientes finalizem pedidos sem concluir o pagamento, podendo causar prejuízos financeiros para a empresa.
+Descrição: Foi identificado um problema em que o sistema permite que clientes finalizem pedidos sem concluir o pagamento, podendo causar prejuízos financeiros para a empresa.
 
-**Pré-condições:**
+Pré-condições:
 - Usuário deve estar logado no sistema.
 - Deve existir um produto disponível para compra.
 - Usuário deve ter acesso ao fluxo de finalização do pedido.
 
-**Passos para reproduzir:**
+Passos para reproduzir:
 1. Acessar a loja com um usuário cadastrado.
 2. Adicionar um produto ao carrinho.
 3. Avançar para a etapa de pagamento.
 4. Não realizar o pagamento.
 5. Tentar finalizar o pedido.
 
-**Resultado esperado:** Sistema deve impedir a finalização do pedido enquanto o pagamento não for confirmado.
+Resultado esperado: Sistema deve impedir a finalização do pedido enquanto o pagamento não for confirmado.
 
-**Resultado obtido:** Sistema permite finalizar o pedido mesmo sem a confirmação do pagamento.
+Resultado obtido: Sistema permite finalizar o pedido mesmo sem a confirmação do pagamento.
 
-**Severidade:** Alta, pois pode causar prejuízos financeiros para a empresa.
+Severidade: Alta, pois pode causar prejuízos financeiros para a empresa.
 
-**Prioridade:** Alta, pois o problema precisa ser corrigido imediatamente para evitar novos pedidos sem pagamento.
+Prioridade: Alta, pois o problema precisa ser corrigido imediatamente para evitar novos pedidos sem pagamento.
 
-**Evidências:**
+Evidências:
 - Gravação de vídeo mostrando o processo de finalização do pedido sem pagamento.
 - Print da tela confirmando que o pedido foi realizado.
 - Log da requisição relacionada à finalização do pedido.
