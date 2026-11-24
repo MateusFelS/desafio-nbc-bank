@@ -1,0 +1,31 @@
+name: Testes API ReqRes - Cypress
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  cypress:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: api-reqres
+
+    steps:
+      - name: Checkout do código
+        uses: actions/checkout@v4
+
+      - name: Executar testes Cypress
+        uses: cypress-io/github-action@v6
+        with:
+          working-directory: api-reqres
+
+      - name: Salvar evidências (screenshots)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: evidencias-cypress
+          path: api-reqres/cypress/evidencias
+          if-no-files-found: warn
