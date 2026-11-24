@@ -12,10 +12,10 @@ Já o Não Funcional verifica aspectos relacionados à qualidade do sistema, com
 É quando alguém explora o sistema sem seguir um roteiro de teste, tentando encontrar problemas e comportamentos inesperados, simulando um usuário real.
 
 ### Teste de Regressão
-É realizado após uma alteração, correção ou implementação no sistema para verificar se as funcionalidades que já funcionavam continuam funcionando corretamente e se nenhuma outra parte do sistema foi afetada pela mudança.
+É realizado após uma alteração, correção ou implementação no sistema para verificar se as funcionalidades que já funcionavam continuam funcionando corretamente e se nenhuma outra parte do sistema foi afetada pela mudança. Por exemplo, após corrigir o carrinho, rodar de novo login, busca e checkout
 
 ### Teste Smoke
-É um teste mais básico, feito para verificar se as principais funcionalidades do sistema estão funcionando e se vale a pena continuar com os testes.
+É um teste mais básico, feito para verificar se as principais funcionalidades do sistema estão funcionando e se vale a pena continuar com os testes. Por exemplo, após um novo deploy, verificar se o sistema abre e se o login funciona
 
 ### Teste de Aceite (UAT)
 É realizado para verificar se o sistema atende às necessidades do negócio e dos usuários. Geralmente é feito pelo cliente ou usuário final antes da aprovação para uso. Por exemplo, o cliente realiza uma compra no sistema para verificar se todo o processo funciona como esperado antes de aprovar o sistema para uso.
@@ -26,25 +26,27 @@ Já o Não Funcional verifica aspectos relacionados à qualidade do sistema, com
 
 **Funcionalidade:** cadastro com Nome, E-mail, Senha e Confirmação de Senha.
 
-## 7. Cenários de Teste - Cadastro de Usuário
+**Premissas:** como o enunciado não define as regras de cada campo, assumi que a senha tem no mínimo 8 caracteres, com pelo menos uma letra maiúscula, um número e um caractere especial, e que o nome não pode conter apenas números ou caracteres especiais.
 
 | ID | Cenário | Resultado esperado |
 |---|---|---|
-| CT-001 | Realizar cadastro com todos os campos preenchidos corretamente | Sistema deve cadastrar o usuário e exibir uma mensagem de sucesso. |
-| CT-002 | Informar nome e sobrenome | Sistema deve aceitar o nome informado. |
-| CT-003 | Informar um e-mail válido | Sistema deve aceitar o formato do e-mail. |
-| CT-004 | Informar uma senha que atenda aos requisitos | Sistema deve aceitar a senha informada. |
-| CT-005 | Informar senhas iguais nos campos Senha e Confirmação de Senha | Sistema deve aceitar a confirmação e permitir o cadastro. |
-| CT-006 | Enviar formulário com todos os campos vazios | Sistema deve informar que os campos são obrigatórios e impedir o cadastro. |
-| CT-007 | Deixar o campo Nome vazio | Sistema deve informar que o nome é obrigatório. |
-| CT-008 | Deixar o campo E-mail vazio | Sistema deve informar que o e-mail é obrigatório. |
-| CT-009 | Deixar o campo Senha vazio | Sistema deve informar que a senha é obrigatória. |
-| CT-010 | Deixar o campo Confirmação de Senha vazio | Sistema deve informar que a confirmação de senha é obrigatória. |
-| CT-011 | Informar um e-mail em formato inválido | Sistema deve informar que o e-mail é inválido e impedir o cadastro. |
-| CT-012 | Informar um e-mail que já está cadastrado | Sistema deve informar que o e-mail já está em uso e impedir o cadastro. |
-| CT-013 | Informar senhas diferentes nos campos Senha e Confirmação de Senha | Sistema deve informar que as senhas não coincidem e impedir o cadastro. |
-| CT-014 | Informar uma senha abaixo do tamanho mínimo permitido | Sistema deve informar que a senha não atende aos requisitos e impedir o cadastro. |
-| CT-015 | Informar um nome contendo apenas números ou caracteres especiais | Sistema deve rejeitar o nome e impedir o cadastro. |
+| CN-01 | Realizar cadastro com todos os campos preenchidos corretamente | Sistema cadastra o usuário e exibe mensagem de sucesso. |
+| CN-02 | Enviar o formulário com todos os campos vazios | Sistema informa que os campos são obrigatórios e impede o cadastro. |
+| CN-03 | Deixar o campo Nome vazio | Sistema informa que o nome é obrigatório e impede o cadastro. |
+| CN-04 | Deixar o campo E-mail vazio | Sistema informa que o e-mail é obrigatório e impede o cadastro. |
+| CN-05 | Deixar o campo Senha vazio | Sistema informa que a senha é obrigatória e impede o cadastro. |
+| CN-06 | Deixar o campo Confirmação de Senha vazio | Sistema informa que a confirmação é obrigatória e impede o cadastro. |
+| CN-07 | Informar um e-mail em formato inválido (ex.: `usuario@`) | Sistema informa que o e-mail é inválido e impede o cadastro. |
+| CN-08 | Informar um e-mail que já está cadastrado | Sistema informa que o e-mail já está em uso e impede o cadastro. |
+| CN-09 | Informar um e-mail já cadastrado trocando maiúsculas e minúsculas (ex.: `Teste@exemplo.com` x `teste@exemplo.com`) | Sistema reconhece como o mesmo e-mail, informa que já está em uso e impede o cadastro. |
+| CN-10 | Informar senhas diferentes em Senha e Confirmação de Senha | Sistema informa que as senhas não coincidem e impede o cadastro. |
+| CN-11 | Informar uma senha com menos de 8 caracteres | Sistema informa que a senha não atende ao tamanho mínimo e impede o cadastro. |
+| CN-12 | Informar uma senha sem os requisitos de complexidade (ex.: sem maiúscula, número ou caractere especial) | Sistema informa os requisitos da senha e impede o cadastro. |
+| CN-13 | Informar um nome contendo apenas números ou caracteres especiais | Sistema rejeita o nome e impede o cadastro. |
+| CN-14 | Preencher os campos apenas com espaços em branco | Sistema trata como campos vazios e impede o cadastro. |
+| CN-15 | Informar um nome com acentos e cedilha (ex.: `João Conceição`) | Sistema aceita o nome e salva os caracteres corretamente. |
+| CN-16 | Digitar `<script>alert(1)</script>` no campo Nome | Sistema rejeita ou trata a entrada, sem executar o script. |
+| CN-17 | Clicar duas vezes rapidamente no botão "Cadastrar" com dados válidos | Sistema cria apenas um cadastro, sem duplicidade. |
 
 ---
 
