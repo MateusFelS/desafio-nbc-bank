@@ -24,8 +24,8 @@ Além do fluxo pedido, incluí cenários negativos:
 
 ## Tecnologias utilizadas
 
-- Cypress
-- Node.js
+- Cypress 16.3.0
+- Node.js v22.17.1
 - GitHub Actions
 
 ## Estrutura do projeto
