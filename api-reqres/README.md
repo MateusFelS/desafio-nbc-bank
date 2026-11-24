@@ -80,7 +80,7 @@ api-reqres/
 
 ## Integração com GitHub Actions
 
-O workflow `.github/workflows/api-reqres.yml` roda os testes a cada push na `main`, em pull requests e manualmente. A chave da API fica no **GitHub Secrets** (`REQRES_API_KEY`), e não no código.
+O workflow `.github/workflows/reqres.yml` roda os testes a cada push na `main`, em pull requests e manualmente. A chave da API fica no **GitHub Secrets** (`REQRES_API_KEY`), e não no código.
 
 ## Observações
 
