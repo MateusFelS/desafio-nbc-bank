@@ -25,8 +25,8 @@ Validações em cada teste:
 
 ## Tecnologias utilizadas
 
-- Cypress 
-- Node.js 
+- Cypress 16.3.0
+- Node.js v22.17.1
 - GitHub Actions
 
 ## Estrutura
