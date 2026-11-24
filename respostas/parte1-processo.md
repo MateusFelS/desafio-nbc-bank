@@ -26,7 +26,7 @@ O STLC é basicamente um conjunto de etapas que ajudam a organizar o processo de
 
 | ID | Cenário | Objetivo | Pré-condição | Passos de Execução | Resultado Esperado |
 |----|---------|----------|--------------|--------------------|---------------------|
-| CT-001 | Realizar login com e-mail e senha válidos | Verificar se o usuário consegue acessar sua conta com credenciais válidas | Usuário cadastrado e na página de login | 1. Preencher o campo de e-mail com um e-mail válido. 2. Preencher o campo de senha com uma senha válida. 3. Clicar em "Entrar". | Sistema deve autenticar o usuário e redirecioná-lo para a área logada. |
+| CT-001 | Realizar login com e-mail e senha válidos | Verificar se o usuário consegue acessar sua conta com credenciais válidas | Usuário cadastrado e na página de login | 1. Preencher o campo de e-mail com um e-mail válido. <br>2. Preencher o campo de senha com uma senha válida. <br>3. Clicar em "Entrar". | Sistema deve autenticar o usuário e redirecioná-lo para a área logada. |
 
 ### Outros cenários que eu cobriria
 
