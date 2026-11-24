@@ -39,7 +39,7 @@ Outros valores da execução: mínimo de 15,35 ms, mediana de 19,61 ms, percenti
 
 ## Tecnologias utilizadas
 
-- k6
+- k6 v1.7.1
 
 O k6 é um executável independente e não precisa de Node.js nem de instalação de dependências.
 
