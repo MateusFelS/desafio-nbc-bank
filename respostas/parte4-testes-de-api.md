@@ -52,8 +52,6 @@ O código, as evidências e as instruções de execução estão na pasta [`api-
 
 ## 19. Automação: suíte de API em pipeline CI/CD
 
-**19. Automação**
-
 - Eu organizaria a suíte automatizada de APIs separando os testes por funcionalidades, como cadastro, consulta, atualização e exclusão de usuários.
 - Criaria testes para validar os status codes, estrutura das respostas JSON, regras de negócio, autenticação e cenários de erro.
 - Integraria os testes ao pipeline CI/CD para que fossem executados automaticamente a cada alteração no código ou antes de uma nova publicação.
