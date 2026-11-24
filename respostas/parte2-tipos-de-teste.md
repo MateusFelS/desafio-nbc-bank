@@ -106,6 +106,7 @@ Primeiro, registraria o bug com os passos para reproduzir o problema e as evidê
 
 Exemplo:
 
+```
 **Título:** Sistema permite finalizar pedidos sem efetuar pagamento.
 
 **Descrição:** Foi identificado um problema em que o sistema permite que clientes finalizem pedidos sem concluir o pagamento, podendo causar prejuízos financeiros para a empresa.
@@ -134,3 +135,4 @@ Exemplo:
 - Gravação de vídeo mostrando o processo de finalização do pedido sem pagamento.
 - Print da tela confirmando que o pedido foi realizado.
 - Log da requisição relacionada à finalização do pedido.
+```
