@@ -9,9 +9,8 @@ on:
 jobs:
   cypress:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: api-reqres
+    env:
+      CYPRESS_REQRES_API_KEY: ${{ secrets.REQRES_API_KEY }}
 
     steps:
       - name: Checkout do código
@@ -22,10 +21,12 @@ jobs:
         with:
           working-directory: api-reqres
 
-      - name: Salvar evidências (screenshots)
+      - name: Salvar evidências
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: evidencias-cypress
-          path: api-reqres/cypress/evidencias
-          if-no-files-found: warn
+          name: evidencias-api
+          path: |
+            api-reqres/cypress/evidencias
+            api-reqres/cypress/screenshots
+          if-no-files-found: ignore
