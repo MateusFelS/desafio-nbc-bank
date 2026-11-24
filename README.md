@@ -58,7 +58,7 @@ Cada pasta tem um README próprio com as instruções de execução local e as e
 
 ## Observações finais
 
-- Não realizei a Parte 6 (nível sênior), por estar além do meu nível de experiência atual. Prefiri concentrar o tempo em entregar bem as Partes 1 a 5.
+- Não realizei a Parte 6 (nível sênior), por estar além do meu nível de experiência atual. Preferi concentrar o tempo em entregar bem as Partes 1 a 5.
 - Nos desafios práticos, além do que foi pedido, incluí alguns cenários negativos para mostrar cobertura além do caminho feliz.
 - No teste de performance, usei somente requisições de leitura e a carga exatamente como pedida (50 usuários por 3 minutos), por se tratar de um serviço público gratuito.
 - Premissas assumidas (como limites de tempo de resposta e regras de senha) estão registradas nos arquivos de cada parte.
