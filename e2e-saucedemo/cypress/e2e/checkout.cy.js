@@ -27,6 +27,7 @@ describe('Checkout - validação de campos - SauceDemo', () => {
       .should('be.visible')
       .and('contain', 'First Name is required')
     cy.url().should('include', '/checkout-step-one.html')
+    cy.screenshot('checkout-sem-nome')
   })
 
   it('deve exigir o CEP quando ele não é preenchido', () => {
@@ -38,5 +39,6 @@ describe('Checkout - validação de campos - SauceDemo', () => {
       .should('be.visible')
       .and('contain', 'Postal Code is required')
     cy.url().should('include', '/checkout-step-one.html')
+    cy.screenshot('checkout-sem-cep')
   })
 })
