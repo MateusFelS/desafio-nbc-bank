@@ -1,5 +1,7 @@
 # Parte 6 – Visão Estratégica de QA (Nível Sênior)
 
+> Nota: esta parte está além da minha experiência atual. As respostas são objetivas e partem do que já vivenciei e estudei.
+
 ## 24. Estratégia de Qualidade
 
 **Plataforma:** front-end web, aplicativo mobile, APIs REST e integrações externas.

@@ -20,7 +20,7 @@
 | 3 | Automação E2E (questões 11 a 14) | Concluída | [respostas/parte3-automacao-e2e.md](respostas/parte3-automacao-e2e.md) e [e2e-saucedemo](e2e-saucedemo/) |
 | 4 | Testes de API (questões 15 a 19) | Concluída | [respostas/parte4-testes-de-api.md](respostas/parte4-testes-de-api.md) e [api-reqres](api-reqres/) |
 | 5 | Testes de Performance (questões 20 a 23) | Concluída | [respostas/parte5-testes-de-performance.md](respostas/parte5-testes-de-performance.md) e [performance-k6](performance-k6/) |
-| 6 | Visão Estratégica de QA (questões 24 a 28) | Não realizada | – |
+| 6 | Visão Estratégica de QA (questões 24 a 28) | Tentei, com respostas objetivas | [respostas/parte6-visao-estrategica.md](respostas/parte6-visao-estrategica.md) |
 
 ## Projetos práticos
 
@@ -58,7 +58,7 @@ Cada pasta tem um README próprio com as instruções de execução local e as e
 
 ## Observações finais
 
-- Não realizei a Parte 6 (nível sênior), por estar além do meu nível de experiência atual. Preferi concentrar o tempo em entregar bem as Partes 1 a 5.
+- Dediquei a maior parte do tempo às Partes 1 a 5, que estão mais próximas da minha experiência prática. A Parte 6 (nível sênior) eu tentei, mas ainda tenho pouco conhecimento nesses temas, então as respostas são objetivas e baseadas no que já vivenciei e estudei.
 - Nos desafios práticos, além do que foi pedido, incluí alguns cenários negativos para mostrar cobertura além do caminho feliz.
 - No teste de performance, usei somente requisições de leitura e a carga exatamente como pedida (50 usuários por 3 minutos), por se tratar de um serviço público gratuito.
 - Premissas assumidas (como limites de tempo de resposta e regras de senha) estão registradas nos arquivos de cada parte.
