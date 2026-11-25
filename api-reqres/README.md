@@ -115,11 +115,12 @@ npm --version
 ## Evidências da execução
 
 - Saída do terminal: [`cypress/evidencias/execucao-terminal.txt`](cypress/evidencias/execucao-terminal.txt)
-- Execução no GitHub Actions: <!-- cole aqui o link de uma execução verde -->
 
 ## Integração com GitHub Actions
 
 O workflow `.github/workflows/reqres.yml` roda os testes a cada push na `main`, em pull requests e manualmente. A chave da API fica no **GitHub Secrets** (`REQRES_API_KEY`), e não no código.
+
+Execução no GitHub Actions: https://github.com/MateusFelS/desafio-nbc-bank/actions
 
 ## Observações
 

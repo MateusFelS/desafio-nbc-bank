@@ -105,9 +105,9 @@ As evidências ficam na pasta `cypress/evidencias/`:
 
 ## Integração com GitHub Actions
 
-Os testes também são executados automaticamente a cada push na branch `main`, em pull requests e manualmente, pelo workflow `.github/workflows/demoblaze.yml`. Os vídeos e screenshots de cada execução ficam disponíveis como artefatos na aba **Actions** do repositório.
+Os testes também são executados automaticamente a cada push na branch `main`, em pull requests e manualmente, pelo workflow `.github/workflows/saucedemo.yml`. Os vídeos e screenshots de cada execução ficam disponíveis como artefatos na aba **Actions** do repositório.
 
-Execução no GitHub Actions: https://github.com/MateusFelS/desafio-nbc-bank/actions/runs/45489355572
+Execução no GitHub Actions: https://github.com/MateusFelS/desafio-nbc-bank/actions
 
 ## Observações
 

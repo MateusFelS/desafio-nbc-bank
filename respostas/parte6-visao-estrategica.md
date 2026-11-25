@@ -13,7 +13,11 @@ Primeiramente, eu procuraria entender como o sistema funciona e quais são suas 
 
 ## 25. Pirâmide de Testes
 
-Eu utilizaria mais testes unitários, pois são rápidos e ajudam a encontrar problemas em pequenas partes do código. Também utilizaria testes de integração para verificar a comunicação entre os componentes e testes E2E para validar os principais fluxos do usuário, como login e realização de compras. Acredito que não seria interessante ter apenas testes E2E, pois eles costumam ser mais demorados e trabalhosos de manter.
+| Nível | Percentual | O que cobre |
+|---|---|---|
+| Unitários | ~70% | Regras de negócio, funções e componentes, de forma isolada. São rápidos e baratos de manter. |
+| Integração / API | ~20% | Comunicação entre serviços, contratos das APIs REST e integrações externas (com mocks ou sandbox). |
+| E2E (web e mobile) | ~10% | Apenas os fluxos críticos do usuário, como login e compra, nos dois canais. |
 
 ---
 
