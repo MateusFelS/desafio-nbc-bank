@@ -56,7 +56,7 @@ performance-k6/
 
 ## Pré-requisitos
 
-- [k6](https://grafana.com/docs/k6/latest/set-up/install-k6/) instalado (testado na v1.7.1; a exportação do relatório HTML exige uma versão recente)
+- [k6](https://grafana.com/docs/k6/latest/set-up/install-k6/) instalado (testado na v1.7.1)
 - Git
 
 Instalação do k6:
