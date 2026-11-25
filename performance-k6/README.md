@@ -54,31 +54,63 @@ performance-k6/
     └── resumo.json
 ```
 
+## Pré-requisitos
+
+- [k6](https://grafana.com/docs/k6/latest/set-up/install-k6/) instalado (testado na v1.7.1; a exportação do relatório HTML exige uma versão recente)
+- Git
+
+Instalação do k6:
+
+```bash
+# Windows
+winget install k6 --source winget
+
+# macOS
+brew install k6
+```
+
+Para outros sistemas, veja o link acima. Para conferir:
+
+```bash
+k6 version
+```
+
 ## Instruções para execução local
 
-1. Instale o [k6](https://grafana.com/docs/k6/latest/set-up/install-k6/) e confirme a instalação:
+1. Clone o repositório e entre na pasta do projeto:
 
    ```bash
-   k6 version
+   git clone https://github.com/mateusfels/desafio-nbc-bank.git
+   cd desafio-nbc-bank/performance-k6
    ```
 
-2. Entre na pasta e execute o teste:
-
-   ```powershell
-   cd performance-k6
-   k6 run --out web-dashboard=export=resultados/relatorio.html --summary-export=resultados/resumo.json teste-carga.js
-   ```
-
-   O teste dura 3 minutos. Para rodar uma versão rápida só para conferir o script:
+2. (Opcional) Faça uma execução rápida só para conferir o script, sem gerar relatório:
 
    ```bash
    k6 run --vus 5 --duration 10s teste-carga.js
    ```
 
+3. Execute o teste completo, que dura 3 minutos e gera o relatório:
+
+   ```bash
+   k6 run --out web-dashboard=export=resultados/relatorio.html --summary-export=resultados/resumo.json teste-carga.js
+   ```
+
+4. Ao final, o terminal mostra o resumo com as métricas e se os thresholds foram atendidos. Abra `resultados/relatorio.html` no navegador para ver o relatório visual.
+
+Onde encontrar as métricas no resumo do terminal:
+
+| Métrica | Linha do resumo |
+|---|---|
+| Tempo médio de resposta | `http_req_duration`, valor `avg` |
+| Throughput | `http_reqs`, taxa por segundo |
+| Percentil 95 | `http_req_duration`, valor `p(95)` |
+| Taxa de erro | `http_req_failed` |
+
 ## Evidências da execução
 
-- Relatório HTML: [`resultados/relatorio.html`](resultados/relatorio.html)
-- Resumo em JSON: [`resultados/resumo.json`](resultados/resumo.json)
+- **Relatório HTML:** [`resultados/relatorio.html`](resultados/relatorio.html)
+- **Resumo em JSON:** [`resultados/resumo.json`](resultados/resumo.json)
 
 ## Observações
 
