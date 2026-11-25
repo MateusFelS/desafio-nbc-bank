@@ -9,6 +9,7 @@ module.exports = defineConfig({
     video: true,
     screenshotsFolder: 'cypress/evidencias/screenshots',
     videosFolder: 'cypress/evidencias/videos',
+    supportFile: false,
     testIsolation: false
   },
 });
