@@ -51,8 +51,7 @@ performance-k6/
 ├── teste-carga.js
 └── resultados/
     ├── relatorio.html
-    ├── resumo.json
-    └── execucao-terminal.png
+    └── resumo.json
 ```
 
 ## Instruções para execução local
