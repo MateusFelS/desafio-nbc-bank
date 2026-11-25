@@ -20,7 +20,7 @@
 | 3 | Automação E2E (questões 11 a 14) | Concluída | [respostas/parte3-automacao-e2e.md](respostas/parte3-automacao-e2e.md) e [e2e-saucedemo](e2e-saucedemo/) |
 | 4 | Testes de API (questões 15 a 19) | Concluída | [respostas/parte4-testes-de-api.md](respostas/parte4-testes-de-api.md) e [api-reqres](api-reqres/) |
 | 5 | Testes de Performance (questões 20 a 23) | Concluída | [respostas/parte5-testes-de-performance.md](respostas/parte5-testes-de-performance.md) e [performance-k6](performance-k6/) |
-| 6 | Visão Estratégica de QA (questões 24 a 28) | Concuída | [respostas/parte6-visao-estrategica.md](respostas/parte6-visao-estrategica.md) |
+| 6 | Visão Estratégica de QA (questões 24 a 28) | Concluída | [respostas/parte6-visao-estrategica.md](respostas/parte6-visao-estrategica.md) |
 
 ## Projetos práticos
 
