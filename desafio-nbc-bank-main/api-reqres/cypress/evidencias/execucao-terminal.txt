@@ -1,0 +1,92 @@
+﻿
+
+====================================================================================================
+
+  (Run Starting)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Cypress:        16.3.0                                                                         │
+  │ Browser:        Electron 150 (headless) (deprecated)                                           │
+  │ Node Version:   v22.17.1 (C:\Program Files\nodejs\node.exe)                                    │
+  │ Specs:          2 found (cenarios-negativos.cy.js, usuarios.cy.js)                             │
+  │ Searched:       cypress/e2e/**/*.cy.{js,jsx,ts,tsx}                                            │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+Warning: The Electron browser is deprecated as a test browser and will be removed in a future version of Cypress.
+
+Switch to Chrome or another installed browser to avoid a breaking change when you upgrade.
+
+Read more about supported browsers: https://on.cypress.io/launching-browsers
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  cenarios-negativos.cy.js                                                        (1 of 2)
+
+
+  API ReqRes - cenários negativos
+    √ retorna 404 ao consultar usuário inexistente (487ms)
+    √ retorna 400 ao fazer login sem senha (446ms)
+
+
+  2 passing (981ms)
+
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        2                                                                                │
+  │ Passing:      2                                                                                │
+  │ Failing:      0                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  0                                                                                │
+  │ Video:        false                                                                            │
+  │ Duration:     0 seconds                                                                        │
+  │ Spec Ran:     cenarios-negativos.cy.js                                                         │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+────────────────────────────────────────────────────────────────────────────────────────────────────
+                                                                                                    
+  Running:  usuarios.cy.js                                                                  (2 of 2)
+
+
+  API ReqRes - CRUD de usuários
+    √ consulta um usuário (GET) (453ms)
+    √ cria um usuário (POST) (296ms)
+    √ atualiza um usuário (PUT) (254ms)
+    √ exclui um usuário (DELETE) (254ms)
+
+
+  4 passing (1s)
+
+
+  (Results)
+
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ Tests:        4                                                                                │
+  │ Passing:      4                                                                                │
+  │ Failing:      0                                                                                │
+  │ Pending:      0                                                                                │
+  │ Skipped:      0                                                                                │
+  │ Screenshots:  0                                                                                │
+  │ Video:        false                                                                            │
+  │ Duration:     1 second                                                                         │
+  │ Spec Ran:     usuarios.cy.js                                                                   │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+====================================================================================================
+
+  (Run Finished)
+
+
+       Spec                                              Tests  Passing  Failing  Pending  Skipped  
+  ┌────────────────────────────────────────────────────────────────────────────────────────────────┐
+  │ √  cenarios-negativos.cy.js                 982ms        2        2        -        -        - │
+  ├────────────────────────────────────────────────────────────────────────────────────────────────┤
+  │ √  usuarios.cy.js                           00:01        4        4        -        -        - │
+  └────────────────────────────────────────────────────────────────────────────────────────────────┘
+    √  All specs passed!                        00:02        6        6        -        -        -  
+
